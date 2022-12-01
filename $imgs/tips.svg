@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 67.733331 67.733333"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="tips.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     width="1200px"
+     inkscape:zoom="0.825"
+     inkscape:cx="192.72727"
+     inkscape:cy="106.06061"
+     inkscape:window-width="1366"
+     inkscape:window-height="670"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:none;stroke:#ededed;stroke-width:5.29166656;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path863"
+       cx="33.866669"
+       cy="33.866669"
+       r="29.633333" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:51.6039px;line-height:1.25;font-family:sans-serif;fill:#ededed;fill-opacity:1;stroke:none;stroke-width:0.26877"
+       x="17.68623"
+       y="54.166821"
+       id="text1929"
+       transform="scale(1.0339648,0.96715092)"><tspan
+         sodipodi:role="line"
+         id="tspan1927"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.6039px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ededed;fill-opacity:1;stroke-width:0.26877"
+         x="17.68623"
+         y="54.166821">?</tspan></text>
+  </g>
+</svg>

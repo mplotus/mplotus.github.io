@@ -1,0 +1,52 @@
+#body_page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99.5%;
+    height: calc(100vh - 70px);
+    border: 1px dashed gray;
+}
+.navigator {
+    position: absolute;
+    z-index: 10;
+    top: calc(100vh - 68px);
+    left: 0;
+    width: 99.9%;
+    height: 68px;
+    background-color: #333333;
+    display: grid;
+    grid-template-columns: 19.98% 19.98% 19.98% 19.98% 19.98%;
+    gap: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.nav_btt {
+    width: 100%;
+    height: 84px;
+    background-color: #333333;
+    cursor: pointer;
+    overflow: visible;
+    text-align: center;
+    transition: margin-top 0.5s ease;
+}
+.nav_img {
+    width: 36px;
+    height: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: auto;
+}
+.nav_name {
+    color: #ededed;
+    font-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: -3px;
+    overflow: visible;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.nav_name_show {
+    opacity: 1;
+}

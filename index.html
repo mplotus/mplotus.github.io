@@ -4,9 +4,32 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <script type='text/javascript' src='./$code/script.js'></script>
         <link rel='stylesheet' href='./$code/style.css'>
+        <link rel='icon' type='x-image/icon' href='./$imgs/lotus.ico'>
         <title>mplotus.github.io Homepage</title>
     </head>
     <body>
-        Hello World!
+        <iframe id='body_page'></iframe>
+        <div class='navigator'>
+            <div class='nav_btt' title='Security' onclick='nav_btt_click(event)'>
+                <image class='nav_img' src='./$imgs/locker.svg'></image>
+                <div class='nav_name'>Security</div>
+            </div>
+            <div class='nav_btt' title='Terabox' onclick='nav_btt_click(event)'>
+                <image class='nav_img' src='./$imgs/terabox.svg'></image>
+                <div class='nav_name'>Terabox</div>
+            </div>
+            <div class='nav_btt' style='margin-top: -14px; background-color: #191919;' title='Google Drive' onclick='nav_btt_click(event)'>
+                <image class='nav_img' src='./$imgs/gdrive.svg'></image>
+                <div class='nav_name' style='opacity: 1;'>Google Drive</div>
+            </div>
+            <div class='nav_btt'  title='Web Applications' onclick='nav_btt_click(event)'>
+                <image class='nav_img' src='./$imgs/apps.svg'></image>
+                <div class='nav_name'>Web Apps</div>
+            </div>
+            <div class='nav_btt'  title='Tips' onclick='nav_btt_click(event)'>
+                <image class='nav_img' src='./$imgs/tips.svg'></image>
+                <div class='nav_name'>Tips</div>
+            </div>
+        </div>
     </body>
 </html>
