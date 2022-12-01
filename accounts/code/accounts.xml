@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<root>
+    <name id="mplotus.github.io" class="1122Google"></name>
+    <name id="d01.server.mplotus" class="1222GDrive">
+        <volume>14.44GB</volume>
+        <folder>Windows Server</folder>
+        <file>Windows_Server_2008_x64.iso</file>
+        <file>Windows_Server_2016_x64.iso</file>
+        <file>Windows_Server_2019_x64.iso</file>
+    </name>
+    <name id="d02.server.mplotus" class="1222GDrive">
+        <volume>7.00GB</volume>
+        <folder>Windows Server</folder>
+        <file>Windows_Server_2003_x64_SP2_R2_Datacenter.iso</file>
+        <file>Windows_Server_2012_x64.iso</file>
+    </name>
+    <name id="d01.clientos.mplotus" class="1222GDrive">
+        <volume>13.53GB</volume>
+        <folder>Windows</folder>
+        <file>Windows_7_AIO_x86.iso</file>
+        <file>Windows_7_AIO_x64.iso</file>
+        <file>Windows_8.1_AIO.iso</file>
+        <file>Windows_10_1909_Home_Pro_x86.iso</file>
+    </name>
+    <name id="d02.clientos.mplotus" class="1222GDrive">
+        <volume>14.23GB</volume>
+        <folder>Windows</folder>
+        <file>Windows_10_1909_Home_Pro_x64.iso</file>
+        <file>Windows_11_x64.iso</file>
+        <folder>Ubuntu</folder>
+        <file>Ubuntu_15.10.iso</file>
+        <file>Ubuntu_21.10.iso</file>
+    </name>
+    <name id="d03.clientos.mplotus" class="1222GDrive">
+        <volume>2.48GB</volume>
+        <folder>Ubuntu</folder>
+        <file>Ubuntu_MATE_22.04.iso</file>
+    </name>
+    <name id="d01.office.mplotus" class="1222GDrive">
+        <volume>6.66GB</volume>
+        <folder>Microsoft</folder>
+        <file>Microsoft_Office_2010_ProPlus_SP2_x86.iso</file>
+        <file>Microsoft_Office_2013_ProPlus_x86.iso</file>
+        <file>Microsoft_Office_2016_ProPlus_x86.iso</file>
+        <file>Microsoft_Office_2019_ProPlus_Volume_x86.iso</file>
+        <folder>PDF Scan</folder>
+        <file>Adobe_Reader_11.rar</file>
+        <file>Foxit_Reader_11.rar</file>
+        <file>NAPS2_portable_win.rar</file>
+        <file>NAPS2_win.rar</file>
+        <file>Nitro_Pro_Enterprise_13_x64.rar</file>
+        <file>Nitro_Pro_Enterprise_13_x86.rar</file>
+    </name>
+    <name id="d01.devtek.mplotus" class="1222GDrive">
+        <volume>13.77GB</volume>
+        <folder>Technical Tools</folder>
+        <file>AIO_Boot.rar</file>
+        <file>dos_app_network_boot.rar</file>
+        <file>EasyBCD_2.4_Portable.rar</file>
+        <file>GImageX.rar</file>
+        <file>NTFS_Drive_Protection.rar</file>
+        <file>Onekey_Ghost.rar</file>
+        <file>Python_Win7_Win10.rar</file>
+        <file>Rufus_3.14.rar</file>
+        <file>ScreenSizeChangeCmd_qres.rar</file>
+        <file>ShortcutCmd.rar</file>
+        <file>SyspinCmd.rar</file>
+        <file>VMWare_macOS_unlocker_master.rar</file>
+        <file>VMWare_USBBoot_plpbt_5.rar</file>
+        <file>VMWare_Workstation_14.rar</file>
+        <file>VMWare_Workstation_16.rar</file>
+        <file>WinAIO_Maker_Pro_1.3.rar</file>
+        <file>WinSetup_From_USB_1.9.rar</file>
+        <file>Windows Automated Installation Kit.rar</file>
+        <folder>Windows PE</folder>
+        <file>DLC_Boot_2019_3.6.rar</file>
+        <file>HBCD_PE_x64.iso</file>
+        <file>HKboot_2020_Rebuild.iso</file>
+        <file>Windows_10_PE_2017.iso</file>
+    </name>
+    <name id="d01.winapp.mplotus" class="1222GDrive">
+        <volume>3.11GB</volume>
+        <folder>Archive</folder>
+        <file>7zip_21.zip</file>
+        <file>GoogleDrive.rar</file>
+        <file>PowerISO_7.9.rar</file>
+        <file>UltraISO_9.7.rar</file>
+        <file>WinRAR_601.zip</file>
+        <file>WinZip_25.rar</file>
+        <folder>Browser</folder>
+        <file>Chrome_Offline_x64.rar</file>
+        <file>Chrome_Offline_x86.rar</file>
+        <file>Chrome_Online.exe</file>
+        <file>CocCoc_Offline_EN.rar</file>
+        <file>CocCoc_Offline_VI.rar</file>
+        <file>CocCoc_Online.exe</file>
+        <file>Firefox_EN_x64.rar</file>
+        <file>Firefox_EN_x86.rar</file>
+        <file>Firefox_VI_x64.rar</file>
+        <file>Firefox_VI_x86.rar</file>
+        <folder>Communication</folder>
+        <file>Skype_8.rar</file>
+        <file>Teamviewer_15.rar</file>
+        <file>UltraViewer_6.4.rar</file>
+        <folder>Multimedia</folder>
+        <file>5KPlayer.rar</file>
+        <file>Adobe_Flash_Player.rar</file>
+        <file>Format_Factory_5.9.rar</file>
+        <file>Gimp_2.10.rar</file>
+        <file>GOMPlayer_2.3.rar</file>
+        <file>IcoFX_3.5.rar</file>
+        <file>IMobie_HEIC_Converter.rar</file>
+        <file>Inkscape_1.1_x64.rar</file>
+        <file>Inkscape_1.1_x86.rar</file>
+        <file>KMPlayer_x64.rar</file>
+        <file>KMPlayer_x86.rar</file>
+        <file>Kodi_19.3_x64.rar</file>
+        <file>Kodi_19.3_x86.rar</file>
+        <file>RealPlayer_9.4.rar</file>
+        <file>Universal_Maps_Downloader.rar</file>
+        <file>VLC_3_x64.rar</file>
+        <file>VLC_3_x86.rar</file>
+        <file>Winamp_5.8.rar</file>
+        <folder>Net Framework</folder>
+        <file>netfx3.5.rar</file>
+        <file>netfx4.0.rar</file>
+        <file>netfx4.5.1.rar</file>
+        <file>netfx4.5.2.rar</file>
+        <file>netfx4.6.0.rar</file>
+        <file>netfx4.6.1.rar</file>
+        <file>netfx4.6.2.rar</file>
+        <file>netfx4.7.0.rar</file>
+        <file>netfx4.7.1.rar</file>
+        <file>netfx4.7.2.rar</file>
+        <file>netfx4.8.rar</file>
+        <file>netfx4.8_win8.1.rar</file>
+        <folder>Registry Editor</folder>
+        <file>3D_Objects_Edit.rar</file>
+        <file>All_Folders_Exclude_3D_Objects _Edit.rar</file>
+        <file>Desktop_Edit.rar</file>
+        <file>Documents_Edit.rar</file>
+        <file>Downloads_Edit.rar</file>
+        <file>Music_Edit.rar</file>
+        <file>Pictures_Edit.rar</file>
+        <file>Restore_Windows_Photo_Viewer.rar</file>
+        <file>Videos_Edit.rar</file>
+    </name>
+    <name id="d01.graphic.mplotus" class="1222GDrive">
+        <volume>14.62GB</volume>
+        <folder>Adobe</folder>
+        <file>Adobe_After_Effects_CC_2021.rar</file>
+        <file>Adobe_After_Effects_CS6.rar</file>
+        <file>Adobe_Audition_CC_2020.rar</file>
+        <file>Adobe_Audition_CS6.rar</file>
+        <file>Adobe_Illustrator_CC_2021_x64.rar</file>
+        <file>Adobe_Illustrator_CS6.rar</file>
+        <file>Adobe_Photoshop_CC_2021.rar</file>
+        <file>Adobe_Photoshop_CS6.rar</file>
+        <file>Adobe_Premiere_Pro_CC_2021.rar</file>
+        <file>Adobe_Premiere_Pro_CS6.rar</file>
+        <folder>Autodesk</folder>
+        <file>AutoCAD_2010_x64.rar</file>
+        <file>AutoCAD_2010_x86.rar</file>
+        <file>AutoCAD_2020_x64.rar</file>
+        <file>AutoCAD_2021_x64.rar</file>
+    </name>
+    <name id="d02.graphic.mplotus" class="1222GDrive">
+        <volume>13.11GB</volume>
+        <folder>Autodesk</folder>
+        <file>Autodesk_3Ds_Max_2020_x64.7z</file>
+        <file>Autodesk_Inventor_Pro_2021.7z</file>
+        <folder>Corel</folder>
+        <file>CorelDRAW_Graphics_Suite_2020.rar</file>
+        <file>CorelDRAW_Graphics_Suite_X6.rar</file>
+        <file>CorelDRAW_Graphics_Suite_X8.rar</file>
+    </name>
+</root>

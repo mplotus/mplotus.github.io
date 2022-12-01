@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mplotus.github.io Security Page</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel="stylesheet" href="./code/style.css">
+        <script type="text/javascript" src="./code/script.js"></script>
+    </head>
+    <body onload="page_load()">
+        <div id="black_screen">
+            <div id="login_form">
+                <p>Enter <span style="font-weight: bold; text-decoration: underline; color: red;">SOS</span>
+                    morse code (0 - short, 1 - long):</p>
+                <div style="width: 100%; text-align: center;">
+                    <input type="password" id="login_text"></div><br>
+                <div style="width: 100%; text-align: center;">
+                    <button id="btt_unlock" style="cursor: pointer;" onclick="pass_enter()">Unlock</button></div>
+            </div>
+        </div>
+        <h1>SECURITY PAGE</h1>
+        <div class="table_cover inner_body table_title">
+            <div>Account</div>
+            <div style="text-align: center;">Keycode</div>
+            <div></div>
+        </div>
+        <div class="inner_body" id="body_page"></div>
+        <p class="inner_body"><b>Password for account:</b> <i>&#x3c;Keycode&#x3e;&#x3c;Security code: 098*****49&#x3e;</i></p>
+        <p class="inner_body"><i>&#x3c;Keycode&#x3e; &#x3d; &#x3c;Modify month&#x3e;&#x3c;Keytype&#x3e;</i></p>
+        <p class="inner_body"><i>&#x3c;Keytype&#x3e; &#x3d; Google or GDrive</i></p>
+        <p class="inner_body"><i>Format of modify month: mmyy (example December 2022 &#x3d;> 1222),
+            with day less than 20 is that month and day more than or equals 20 is that month + 1
+            (example 19th December 2022 &#x3d;> 1222, 20th December 2022 &#x3d;> 0123)</i></p>
+    </body>
+</html>
