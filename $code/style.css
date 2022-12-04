@@ -4,7 +4,6 @@
     left: 0;
     width: 99.5%;
     height: calc(100vh - 70px);
-    border: 1px dashed gray;
 }
 .navigator {
     position: absolute;
