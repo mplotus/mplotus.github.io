@@ -75,7 +75,27 @@ div.dv_title {
     height: 64px;
     margin: 8px;
 }
-#body_page {
+.mtype {
+    position: absolute;
+    top: 0;
+    left: 88px;
+    margin: 8px;
+    font-size: 160%;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline double #0080ff;
+    color: #0080ff;
+}
+.mdirname {
+    position: absolute;
+    top: 32px;
+    left: 88px;
+    margin: 8px;
+    font-size: 200%;
+    font-weight: bold;
+    color: #0080ff;
+}
+.body_page {
     position: absolute;
     width: calc(100vw - 22px);
     height: auto;
@@ -89,7 +109,7 @@ div.dv_title {
     div.dv_title {
         height: 30px;
     }
-    #body_page {
+    .body_page {
         margin-top: 70px;
     }
     .micon {
@@ -97,17 +117,30 @@ div.dv_title {
         height: 24px;
         margin: 3px 8px;
     }
+    .mtype {
+        left: 40px;
+        margin: 5px;
+        font-size: 120%;
+        text-decoration: none;
+        font-style: normal;
+    }
+    .mdirname {
+        font-size: 120%;
+        top: 0;
+        left: 110px;
+        margin: 5px;
+    }
 }
 @media only screen and (min-width: 480px) {
-    #body_page { grid-template-columns: calc(50vw - 16px) calc(50vw - 16px); }
+    .body_page { grid-template-columns: calc(50vw - 16px) calc(50vw - 16px); }
 }
 @media only screen and (min-width: 600px) {
-    #body_page { grid-template-columns: calc(33.3vw - 15px) calc(33.3vw - 15px) calc(33.3vw - 15px); }
+    .body_page { grid-template-columns: calc(33.3vw - 15px) calc(33.3vw - 15px) calc(33.3vw - 15px); }
 }
 @media only screen and (min-width: 800px) {
-    #body_page { grid-template-columns: calc(25vw - 14px) calc(25vw - 14px) calc(25vw - 14px) calc(25vw - 14px); }
+    .body_page { grid-template-columns: calc(25vw - 14px) calc(25vw - 14px) calc(25vw - 14px) calc(25vw - 14px); }
 }
-#body_page a {
+.body_page a {
     text-align: center;
     border-radius: 12px;
     min-height: 80px;
@@ -115,7 +148,7 @@ div.dv_title {
     text-decoration: none;
     transition: 0.5s ease;
 }
-#body_page a:hover {
+.body_page a:hover {
     transform: scale(1.25);
 }
 .icons {
