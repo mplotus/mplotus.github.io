@@ -19,16 +19,16 @@ const nav_btt_click = event => {
     _btts[_bId].children[1].style.opacity = '1';
     switch(_bId) {
         case 0: 
-            document.getElementById('body_page').src = './accounts/index.html';
+            document.getElementById('body_page').src = 'https://mplotus.github.io/accounts/index.html';
             break;
         case 1: 
-            document.getElementById('body_page').src = './t/index.html';
+            document.getElementById('body_page').src = 'https://mplotus.github.io/t/index.html';
             break;
         case 2: 
-            document.getElementById('body_page').src = './g/index.html';
+            document.getElementById('body_page').src = 'https://mplotus.github.io/g/index.html';
             break;
         case 3:
-            document.getElementById('body_page').src = './webapps/index.html';
+            document.getElementById('body_page').src = 'https://mplotus.github.io/webapps/index.html';
             break;
         case 4:
                 document.getElementById('body_page').src = 'https://mplotus.github.io/tips';
