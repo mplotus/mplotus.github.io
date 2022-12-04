@@ -113,6 +113,7 @@ div.dv_title::-webkit-scrollbar {
     display: grid;
     grid-template-columns: calc(100vw - 32px);
     gap: 10px;
+    overflow-x: hidden;
 }
 @media only screen and (max-height: 360px) {
     div.dv_title {
