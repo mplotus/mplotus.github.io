@@ -70,6 +70,13 @@ div.dv_title {
     width: 100%;
     height: 80px;
     background-color: #ddeeff;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+div.dv_title::-webkit-scrollbar {
+    display: none;
 }
 .micon {
     width: 64px;
