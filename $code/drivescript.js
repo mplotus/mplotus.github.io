@@ -3,8 +3,6 @@ const page_load = () => {
     _address = _address.replace('/index.html',''); // Trim file name
     _address = _address.substring(2,_address.length); // Trim root
     if(_address.length != 0) _address = _address.substring(1,_address.length);
-    let _arrpath = new Array();
-    _arrpath.push('Google Cloud Drive');
     let _temppath = _address.split('/');
     fetch('https://mplotus.github.io/-admin/googledrive/data.xml').then(res => {
         res.text().then(xml => {
@@ -36,8 +34,16 @@ const page_load = () => {
                     let _a = document.createElement('a');
                     _a.innerText = _arrname[i];
                     let _rootpath = window.location.protocol + '//' + window.location.hostname;
-                    
-                    _a.href = '#';
+                    if(window.location.port != '') _rootpath += ':' + window.location.port;
+                    _rootpath = _rootpath + '/g/';
+                    if(i==0) _a.href = _rootpath;
+                    else {
+                        let _strdir = '';
+                        for(j=0;j<i;j++) {
+                            _strdir += _temppath[j] + '/';
+                        }
+                        _a.href = _rootpath + _strdir;
+                    }
                     _ali.appendChild(_a);
                     _ul_navi.appendChild(_ali);
                 }
@@ -48,10 +54,6 @@ const page_load = () => {
             document.getElementById('m_icon').src = (_arrname.length == 1)?'https://mplotus.github.io/$imgs/igdrive.svg':'https://mplotus.github.io/$imgs/idir.svg';
             document.getElementById('m_type').innerText = (_arrname.length == 1)?'Drive':'Folder';
             document.getElementById('m_dirname').innerText = (_arrname.length == 1)?'Google Cloud':_arrname[_arrname.length - 1];
-            console.log(window.location.protocol);
-            console.log(window.location.hostname);
-            console.log(window.location.port);
-            console.log(window.location.pathname);
         })
     });
 }
