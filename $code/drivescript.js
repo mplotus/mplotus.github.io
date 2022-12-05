@@ -5,7 +5,7 @@ const page_load = () => {
     if(_address.length != 0) _address = _address.substring(1,_address.length); // Trim first splash
     if(_address[_address.length-1] == '/') _address = _address.substring(0,_address.length - 1); // Trim last splash
     let _temppath = _address.split('/');
-    fetch('https://mplotus.github.io/-admin/googledrive/data.xml').then(res => {
+    fetch('https://mplotus.github.io/x-admin/googledrive/data.xml').then(res => {
         res.text().then(xml => {
             let _parser = new DOMParser();
             let _root = _parser.parseFromString(xml, 'application/xml').querySelector('root');
