@@ -3,32 +3,20 @@
     <head>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <link rel='stylesheet' href='https://mplotus.github.io/$code/drivestyle.css'>
-        <title>Google Cloud Drive</title>
+        <title>Tieu De</title>
+        <script type='text/javascript' src='../$code/drivescript.js'></script>
     </head>
-    <body>
+    <body onload='page_load()'>
         <div class='dv_navi' title='Shift + scroll to expand view'>
-            <ul class='ul_navi'>
-                <li class='li_seldir' style='font-size: 150%;'>Google Cloud Drive</li>
+            <ul class='ul_navi' id='ul_navi'>
             </ul>
         </div>
         <div class='dv_title'>
-            <image class='micon' src='https://mplotus.github.io/$imgs/igdrive.svg'></image>
-            <div class='mtype'>Drive</div>
-            <div class='mdirname'>Google Cloud</div>
+            <image class='micon' id='m_icon'></image>
+            <div class='mtype' id='m_type'></div>
+            <div class='mdirname' id='m_dirname'></div>
         </div>
-        <div class='body_page'>
-            <a href='https://mplotus.github.io/g/ComputerDrivers'>
-                <image class='icons' src='https://mplotus.github.io/$imgs/idir.svg'></image>
-                <div class='inames'>Computer Drivers</div>
-            </a>
-            <a href='https://mplotus.github.io/g/SoftwareBackup'>
-                <image class='icons' src='https://mplotus.github.io/$imgs/idir.svg'></image>
-                <div class='inames'>Software Backup</div>
-            </a>
-            <a href='https://mplotus.github.io/g/TechnicalAndDevelopment'>
-                <image class='icons' src='https://mplotus.github.io/$imgs/idir.svg'></image>
-                <div class='inames'>Technical and Development Tools</div>
-            </a>
+        <div class='body_page' id='body_page'>
         </div>
     </body>
 </html>

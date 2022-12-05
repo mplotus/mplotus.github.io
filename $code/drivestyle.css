@@ -54,6 +54,7 @@ ul.ul_navi li a {
     font-weight: bold;
     color: #404040;
     text-decoration: none;
+    cursor: pointer;
     transition: font-size 0.5s ease;
 }
 ul.ul_navi li a:hover {
