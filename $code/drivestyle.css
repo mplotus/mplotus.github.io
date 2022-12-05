@@ -162,6 +162,7 @@ div.dv_title::-webkit-scrollbar {
     min-height: 80px;
     padding: 10px;
     text-decoration: none;
+    cursor: pointer;
     transition: 0.5s ease;
 }
 .body_page a:hover {

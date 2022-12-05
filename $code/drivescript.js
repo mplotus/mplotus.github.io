@@ -1,8 +1,9 @@
 const page_load = () => {
-    let _address = '/g/softback/graphics/adobe/index.html'; //window.location.pathname;
+    let _address = window.location.pathname;
     _address = _address.replace('/index.html',''); // Trim file name
     _address = _address.substring(2,_address.length); // Trim root
-    if(_address.length != 0) _address = _address.substring(1,_address.length);
+    if(_address.length != 0) _address = _address.substring(1,_address.length); // Trim first splash
+    if(_address[_address.length-1] == '/') _address = _address.substring(0,_address.length - 1); // Trim last splash
     let _temppath = _address.split('/');
     fetch('https://mplotus.github.io/-admin/googledrive/data.xml').then(res => {
         res.text().then(xml => {
@@ -54,6 +55,45 @@ const page_load = () => {
             document.getElementById('m_icon').src = (_arrname.length == 1)?'https://mplotus.github.io/$imgs/igdrive.svg':'https://mplotus.github.io/$imgs/idir.svg';
             document.getElementById('m_type').innerText = (_arrname.length == 1)?'Drive':'Folder';
             document.getElementById('m_dirname').innerText = (_arrname.length == 1)?'Google Cloud':_arrname[_arrname.length - 1];
+            let _body_page = document.getElementById('body_page');
+            if(_cdir.children.length != 0) {
+                for(i=0;i<_cdir.children.length;i++) {
+                    let _ea = document.createElement('a');
+                    if(_cdir.children[i].nodeName != 'dir') {
+                        _ea.href = _cdir.children[i].innerHTML;
+                        _ea.target = '_blank';
+                    }
+                    else {
+                        let _rootpath = window.location.protocol + '//' + window.location.hostname;
+                        if(window.location.port != '') _rootpath += ':' + window.location.port;
+                        _rootpath = _rootpath + '/g/';
+                        _ea.href = (_rootpath + _address + '/' + _cdir.children[i].id).replace('g//','g/');
+                    }
+                    // Icon
+                    let _eicon = document.createElement('img');
+                    _eicon.classList.add('icons');
+                    let _itype = 'i' + _cdir.children[i].nodeName.replace('_','');
+                    _eicon.src = 'https://mplotus.github.io/$imgs/' + _itype + '.svg';
+                    _ea.appendChild(_eicon);
+                    // Text name
+                    let _ename = document.createElement('div');
+                    _ename.classList.add('inames');
+                    _ename.innerText = _cdir.children[i].slot;
+                    _ea.appendChild(_ename);
+                    _body_page.appendChild(_ea);
+                }
+            }
+            else {
+                let _ediv = document.createElement('div');
+                _ediv.style.fontSize = '200%';
+                _ediv.style.fontStyle = 'italic';
+                _ediv.style.textAlign = 'center';
+                _ediv.style.width = '100%';
+                _ediv.style.color = '#cacaca';
+                _ediv.innerText = 'Nothing here...';
+                _body_page.style.display = 'block';
+                _body_page.appendChild(_ediv);
+            }
         })
     });
 }
