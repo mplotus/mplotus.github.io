@@ -92,6 +92,8 @@ const page_load = () => {
                 _ediv.style.color = '#cacaca';
                 _ediv.innerText = 'Nothing here...';
                 _body_page.style.display = 'block';
+                _body_page.style.alignItems = 'center';
+                _body_page.style.minHeight = '100vh';
                 _body_page.appendChild(_ediv);
             }
         })
