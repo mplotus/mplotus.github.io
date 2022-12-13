@@ -26,7 +26,7 @@
      units="px"
      width="1200px"
      inkscape:zoom="0.825"
-     inkscape:cx="-60.606061"
+     inkscape:cx="-61.212121"
      inkscape:cy="146.06061"
      inkscape:window-width="1366"
      inkscape:window-height="670"
@@ -41,33 +41,33 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:none;stroke:#ededed;stroke-width:5.29167;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#ededed;stroke-width:4.61056;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect875"
-       width="21.463957"
-       height="21.463957"
-       x="4.0729499"
-       y="42.586704" />
+       width="18.701252"
+       height="18.701252"
+       x="7.8615298"
+       y="41.435131" />
     <rect
-       style="fill:none;stroke:#ededed;stroke-width:5.29167;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#ededed;stroke-width:4.61056;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect957"
-       width="21.463957"
-       height="21.463957"
-       x="32.540997"
-       y="42.586704" />
+       width="18.701252"
+       height="18.701252"
+       x="32.665352"
+       y="41.435131" />
     <rect
-       style="fill:none;stroke:#ededed;stroke-width:5.29167;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#ededed;stroke-width:4.61056;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect959"
-       width="21.463957"
-       height="21.463957"
-       x="4.0729499"
-       y="13.915226" />
+       width="18.701252"
+       height="18.701252"
+       x="7.8615298"
+       y="16.454067" />
     <rect
-       style="fill:none;stroke:#ededed;stroke-width:5.29167;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#ededed;stroke-width:4.61056;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect961"
-       width="21.463957"
-       height="21.463957"
-       x="40.604736"
-       y="-17.995163"
+       width="18.701252"
+       height="18.701252"
+       x="41.278328"
+       y="-14.08553"
        transform="rotate(30)" />
   </g>
 </svg>

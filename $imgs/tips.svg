@@ -26,7 +26,7 @@
      units="px"
      width="1200px"
      inkscape:zoom="0.825"
-     inkscape:cx="192.72727"
+     inkscape:cx="183.63636"
      inkscape:cy="106.06061"
      inkscape:window-width="1366"
      inkscape:window-height="670"
@@ -41,22 +41,22 @@
      inkscape:groupmode="layer"
      id="layer1">
     <circle
-       style="fill:none;stroke:#ededed;stroke-width:5.29166656;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#ededed;stroke-width:4.68443;stroke-miterlimit:4;stroke-dasharray:none"
        id="path863"
-       cx="33.866669"
-       cy="33.866669"
-       r="29.633333" />
+       cx="33.866665"
+       cy="33.866665"
+       r="26.232784" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:51.6039px;line-height:1.25;font-family:sans-serif;fill:#ededed;fill-opacity:1;stroke:none;stroke-width:0.26877"
-       x="17.68623"
-       y="54.166821"
+       style="font-style:normal;font-weight:normal;font-size:45.6821px;line-height:1.25;font-family:sans-serif;fill:#ededed;fill-opacity:1;stroke:none;stroke-width:0.237928"
+       x="19.415339"
+       y="51.969288"
        id="text1929"
        transform="scale(1.0339648,0.96715092)"><tspan
          sodipodi:role="line"
          id="tspan1927"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:51.6039px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ededed;fill-opacity:1;stroke-width:0.26877"
-         x="17.68623"
-         y="54.166821">?</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:45.6821px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ededed;fill-opacity:1;stroke-width:0.237928"
+         x="19.415339"
+         y="51.969288">?</tspan></text>
   </g>
 </svg>
