@@ -1,51 +1,67 @@
-#body_page {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 99.5%;
-    height: calc(100vh - 70px);
-}
-.navigator {
-    position: absolute;
-    z-index: 10;
-    top: calc(100vh - 68px);
-    left: 0;
-    width: 99.9%;
-    height: 68px;
-    background-color: #333333;
-    display: grid;
-    grid-template-columns: 19.98% 19.98% 19.98% 19.98% 19.98%;
-    gap: 0px;
-    padding: 0px;
+body {
+    background-color: #0d5419;
     overflow: hidden;
 }
-.nav_btt {
+#wallpaper {
     width: 100%;
-    height: 84px;
-    background-color: #333333;
-    cursor: pointer;
-    overflow: visible;
+    height: auto;
+    overflow-x: hidden;
+}
+#bg_wall {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    background-color: #5dcaee;
+}
+#bg_cloud {
+    position: absolute;
+    width: 115%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+#bg_mount {
+    position: absolute;
+    width: 120%;
+    height: auto;
+    top: 12vw;
+    left: -20%;
+}
+#bg_ground {
+    position: absolute;
+    width: 120%;
+    height: auto;
+    top: 24vw;
+    left: 0;
+}
+#flat_name {
+    position: absolute;
+    width: 50vw;
+    height: 12vw;
+    margin-left: 25vw;
+    margin-top: 28vh; /* Calculate to center picture */
     text-align: center;
-    transition: margin-top 0.5s ease;
+    box-shadow: 0 0 20px black;
+    background-color: rgba(220, 220, 220, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
-.nav_img {
-    width: 36px;
-    height: 36px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: auto;
-}
-.nav_name {
-    color: #ededed;
-    font-size: 90%;
-    font-family: Arial, Helvetica, sans-serif;
+#web_name {
+    user-select: none;
+    margin: 1vw;
+    font-size: 5vw;
     font-weight: bold;
-    margin-top: -3px;
-    overflow: visible;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e0e0e0;
+    text-shadow: 0 0 20px #0e0e0e;
 }
-.nav_name_show {
-    opacity: 1;
+#web_slogan {
+    user-select: none;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e0e0e0;
+    text-shadow: 0 0 20px #0e0e0e;
 }
