@@ -26,31 +26,89 @@
      units="px"
      width="1200px"
      inkscape:zoom="1.1667262"
-     inkscape:cx="230.13111"
+     inkscape:cx="222.84577"
      inkscape:cy="79.281669"
      inkscape:window-width="1366"
      inkscape:window-height="670"
      inkscape:window-x="0"
      inkscape:window-y="28"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="g960" />
   <defs
-     id="defs2" />
+     id="defs2">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1214"
+       x="-0.1809436"
+       y="-0.36745391"
+       width="1.3626233"
+       height="1.7361142">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.97122136"
+         id="feGaussianBlur1216" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1218"
+       x="-0.22668374"
+       y="-0.1893812"
+       width="1.4515307"
+       height="1.3787624">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.97122136"
+         id="feGaussianBlur1220" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1222"
+       x="-0.23454222"
+       y="-0.19127196"
+       width="1.4686741"
+       height="1.3837697">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.97122136"
+         id="feGaussianBlur1224" />
+    </filter>
+  </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <path
-       style="fill:none;stroke:#ededed;stroke-width:4.15234;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 7.6964776,40.90038 15.452453,54.334123 30.501273,28.268805 22.930797,15.156355 Z"
-       id="path896" />
-    <path
-       style="fill:none;stroke:#ededed;stroke-width:4.15234;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 44.099501,10.80742 H 28.587551 L 43.636369,36.872739 H 58.77732 Z"
-       id="path978" />
-    <path
-       style="fill:none;stroke:#ededed;stroke-width:4.15234;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 51.089661,56.780398 7.755975,-13.433742 -30.097637,-1e-6 -7.570476,13.112448 z"
-       id="path980" />
+    <g
+       id="g952">
+      <path
+         style="fill:none;stroke:#0e0e0e;stroke-width:5.2107;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1222)"
+         d="M 7.6964776,40.90038 15.452453,54.334123 30.501273,28.268805 22.930797,15.156355 Z"
+         id="path896" />
+      <path
+         style="fill:none;stroke:#0e0e0e;stroke-width:5.2107;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1218)"
+         d="M 44.099501,10.80742 H 28.587551 L 43.636369,36.872739 H 58.77732 Z"
+         id="path978" />
+      <path
+         style="fill:none;stroke:#0e0e0e;stroke-width:5.2107;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1214)"
+         d="m 51.089661,56.780398 7.755975,-13.433742 -30.097637,-1e-6 -7.570476,13.112448 z"
+         id="path980" />
+    </g>
+    <g
+       id="g960">
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4.15234;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 7.6964776,40.90038 15.452453,54.334123 30.501273,28.268805 22.930797,15.156355 Z"
+         id="path954" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4.15234;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 44.099501,10.80742 H 28.587551 L 43.636369,36.872739 H 58.77732 Z"
+         id="path956" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4.15234;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 51.089661,56.780398 7.755975,-13.433742 -30.097637,-1e-6 -7.570476,13.112448 z"
+         id="path958" />
+    </g>
   </g>
 </svg>
