@@ -1,0 +1,19 @@
+#content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 20vh;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0;
+}
+@media only screen and (min-width: 480px) {
+    #content { grid-template-columns: auto auto; }
+}
+@media only screen and (min-width: 600px) {
+    #content { grid-template-columns: auto auto auto; }
+}
+@media only screen and (min-width: 800px) {
+    #content { grid-template-columns: auto auto auto auto; }
+}
