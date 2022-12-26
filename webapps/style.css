@@ -5,15 +5,36 @@
     width: 100vw;
     min-height: 20vh;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 100vw;
     gap: 0;
 }
+#content a {
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    transition: 0.5s ease;
+}
+#content a:hover {
+    background-color: rgb(192, 255, 255);
+}
+#content a img {
+    width: 64px;
+    height: 64px;
+    margin: 10px;
+}
+#content a div {
+    font-size: larger;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 16px;
+}
 @media only screen and (min-width: 480px) {
-    #content { grid-template-columns: auto auto; }
+    #content { grid-template-columns: 50vw 50vw; }
 }
 @media only screen and (min-width: 600px) {
-    #content { grid-template-columns: auto auto auto; }
+    #content { grid-template-columns: 33vw 34vw 33vw; }
 }
 @media only screen and (min-width: 800px) {
-    #content { grid-template-columns: auto auto auto auto; }
+    #content { grid-template-columns: 25vw 25vw 25vw 25vw; }
 }
