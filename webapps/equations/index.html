@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Equations Calculator</title>
+        <link rel='icon' type='image/x-icon' href='./imgs/calc.ico'>
+        <script lang='javascript' src='./code/matrix.js'></script>
+        <script language='javascript'>
+            var txt_numvar;
+            function page_load(){
+                txt_numvar = document.getElementById('txt_numvar');
+            }
+            function txt_numvar_keyup(event){
+                if(event.keyCode==13){
+                    if(txt_numvar.value=='') txt_numvar.value='2';
+                    else if(isNaN(parseInt(txt_numvar.value))) {
+                        alert('Invalid number format!');
+                        txt_numvar.value='2';
+                    }
+                    else {
+                        var numvar = parseInt(txt_numvar.value);
+                        if(numvar<2) {
+                            alert('Minimum of this field is 2!');
+                            txt_numvar.value='2';
+                        }
+                        if(numvar>10) {
+                            alert('Maximum of this field is 10!');
+                            txt_numvar.value='10';
+                        }
+                    }
+                    if(document.body.childNodes.length>4) {
+                        document.body.removeChild(document.getElementById('mainTable'));
+                        document.body.removeChild(document.getElementById('lbl_info'));
+                    }
+                    var tTab = document.createElement('table');
+                    tTab.id='mainTable';
+                    tTab.style='font-size:80%; user-select:none; width:65%;';
+                    var numvar = parseInt(txt_numvar.value);
+                    for(i=0;i<=numvar+1;i++){
+                        var tRow = document.createElement('tr');
+                        for(j=1;j<=numvar+1;j++){
+                            var tCell = document.createElement('td');
+                            tCell.style='text-align:center;font-size:100%;';
+                            if(i>0 && i<=numvar){
+                                var txt_cell = document.createElement('input');
+                                txt_cell.type='text';
+                                txt_cell.maxlength='2';
+                                txt_cell.id='cell'+i+''+j;
+                                txt_cell.value='0';
+                                txt_cell.style='width:100%; text-align:center; font-size:80%;';
+                                tCell.appendChild(txt_cell);
+                            }
+                            else{
+                                if(i==0){
+                                    tCell.style='font-weight:bold;text-align:center;'
+                                    if(j<=numvar){
+                                        tCell.innerHTML='x'+j.toString().sub();
+                                    }
+                                    else{
+                                        tCell.innerText='y';
+                                    }
+                                }
+                                else{
+                                    if(j==1){
+                                        tCell.colSpan=numvar+1;
+                                        var btt_solve = document.createElement('button');
+                                        btt_solve.innerText='SOLVE THESE EQUATIONS';
+                                        btt_solve.style='font-size:80%;';
+                                        btt_solve.addEventListener('click',btt_solve_click);
+                                        tCell.appendChild(btt_solve);
+                                    }
+                                }
+                            }
+                            tRow.appendChild(tCell);
+                        }
+                        tTab.appendChild(tRow);
+                    }
+                    document.body.appendChild(tTab);
+                }
+            }
+            function btt_solve_click(){
+                var broken = false;
+                var numvar = parseInt(txt_numvar.value);
+                var arrX = new Array();
+                for(i=0;i<numvar;i++){
+                    var arrXj = new Array();
+                    for(j=0;j<numvar;j++){
+                        var txt_ij = document.getElementById('cell'+(i+1)+''+(j+1));
+                        if(isNaN(parseFloat(txt_ij.value))){
+                            alert('Item at row: ' + (i+1) + ' column: ' + (j+1) + ' is not a float number!');
+                            txt_ij.focus();
+                            broken = true;
+                        }
+                        else{
+                            arrXj.push(parseFloat(txt_ij.value));
+                        }
+                    }
+                    arrX.push(arrXj);
+                }
+                if(!broken) {
+                    var arrY = new Array();
+                    for(i=0;i<numvar;i++){
+                        var txt_y = document.getElementById('cell'+(i+1)+(numvar+1));
+                        if(isNaN(parseFloat(txt_y.value))){
+                            alert('Item at row: ' + (i+1) + ' column: ' + (numvar+1) + ' is not a float number!');
+                            txt_y.focus();
+                            broken = true;
+                        }
+                        else{
+                            arrY.push(parseFloat(txt_y.value));
+                        }
+                    }
+                    if(!broken) {
+                        var matX = new Matrix(arrX);
+                        var matY = new Matrix(arrY);
+                        if(isNaN(document.getElementById('lbl_info'))) 
+                            document.body.removeChild(document.getElementById('lbl_info'));
+                        var mCell = document.createElement('label');
+                        mCell.id = 'lbl_info';
+                        document.body.appendChild(mCell);
+                        if(matX.inverse().toString() == 'NaN') {
+                            mCell.innerHTML = 'Equations has no or any variable!';
+                        }
+                        else {
+                            var matKQ = matX.inverse().multiply(matY);
+                            var strKQ = '';
+                            for(i=0;i<matKQ.row();i++) {
+                                strKQ += '<b>x' + (i+1).toString().sub() + '</b> = ' + numRound(matKQ.item(i,0),6) + '<br>';
+                            }
+                            mCell.innerHTML = strKQ;
+                        }
+                    }
+                }
+            }
+            function numRound(number,digit) {
+                if(digit>0){
+                    if(isNaN(parseFloat(number))) return NaN;
+                    else return Math.round(number * Math.pow(10,digit)) / Math.pow(10,digit);
+                }
+                else return NaN;
+            }
+        </script>
+    </head>
+    <body onload='page_load()' style='user-select: none; font-size:200%; background: white;'>
+        Number of variable:
+        <input type='text' id='txt_numvar' value='2' maxlength='2' style='width:50px;text-align:center;font-size:80%;' onkeyup='txt_numvar_keyup(event)'></br>
+    </body>
+</html>

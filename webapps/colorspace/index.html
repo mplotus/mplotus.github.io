@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>COLOR SPACE</title>
+        <link rel='icon' type='image/x-icon' href='./imgs/colspace.ico'>
+        <link rel='stylesheet' href='./code/style.css'>
+        <script type='text/javascript' src='./code/code.js'></script>
+        <script type='text/javascript' src='./code/colorspace.js'></script>
+    </head>
+    <body onload='page_load()'>
+        <table>
+            <tr>
+                <td colspan='9' align='center'><h2>COLOR SPACE CONVERTER</h2></td>
+            </tr>
+            <tr>
+                <td><input type='radio' id='selector' name='rd_space' class='rd_space' checked 
+                    onchange='radio_change()'>
+                    <label class='lb_space' onclick='lb_space_click(0)'><b>Color:</b></label>
+                </td>
+                <td colspan='8'>
+                    <input type='color' id='cl_selector' class='colVal' value='#0080ff' 
+                    onchange='selector_change()'>
+                </td>
+            </tr>
+            <tr>
+                <td><input type='radio' name='rd_space' class='rd_space' id='hexcode' onchange='radio_change()'>
+                    <label class='lb_space' onclick='lb_space_click(1)'><b>Hexcode:</b></label>
+                </td>
+                <td align='right'>#</td>
+                <td colspan='6'><input type='text' id='tx_hexcode' class='colVal' maxlength='6' value='0080ff'
+                    onfocus='hexcode_focus()'
+                    onblur='hexcode_blur()'
+                    onkeyup='hexcode_keyup()'></td>
+            </tr>
+            <tr>
+                <td><input type='radio' name='rd_space' class='rd_space' id='rgb' onchange='radio_change()'>
+                    <label class='lb_space' onclick='lb_space_click(2)'><b>RGB:</b></label>
+                </td>
+                <td><b>R</b>ed:</td>
+                <td><input type='number' class='nb_2 colVal' value='0' min='0' max='255' step='1' 
+                    onchange='number_change()'></td>
+                <td><b>G</b>reen:</td>
+                <td><input type='number' class='nb_2 colVal' value='128' min='0' max='255' step='1'
+                    onchange='number_change()'></td>
+                <td><b>B</b>lue:</td>
+                <td><input type='number' class='nb_2 colVal' value='255' min='0' max='255' step='1'
+                    onchange='number_change()'></td>
+            </tr>
+            <tr>
+                <td><input type='radio' name='rd_space' class='rd_space' value='hsl' onchange='radio_change()'>
+                    <label class='lb_space' onclick='lb_space_click(3)'><b>HSL:</b></label>
+                </td>
+                <td><b>H</b>ue:</td>
+                <td><input type='number' class='nb_3 colVal' value='0.583' min='0' max='1' step='0.001'
+                    onchange='number_change()'></td>
+                <td><b>S</b>aturate:</td>
+                <td><input type='number' class='nb_3 colVal' value='1' min='0' max='1' step='0.001'
+                    onchange='number_change()'></td>
+                <td><b>L</b>uminate:</td>
+                <td><input type='number' class='nb_3 colVal' value='0.5' min='0' max='1' step='0.001'
+                    onchange='number_change()'></td>
+            </tr>
+            <tr>
+                <td><input type='radio' name='rd_space' class='rd_space' value='hsv' onchange='radio_change()'>
+                    <label class='lb_space' onclick='lb_space_click(4)'><b>HSV:</b></label>
+                </td>
+                <td><b>H</b>ue:</td>
+                <td><input type='number' class='nb_4 colVal' value='0.583' min='0' max='1' step='0.001'
+                    onchange='number_change()'></td>
+                <td><b>S</b>aturate:</td>
+                <td><input type='number' class='nb_4 colVal' value='1' min='0' max='1' step='0.001'
+                    onchange='number_change()'></td>
+                <td><b>V</b>alue:</td>
+                <td><input type='number' class='nb_4 colVal' value='1' min='0' max='1' step='0.001'
+                    onchange='number_change()'></td>
+            </tr>
+            <tr>
+                <td><input type='radio' name='rd_space' class='rd_space' value='hsi' onchange='radio_change()'>
+                    <label class='lb_space' onclick='lb_space_click(5)'><b>HSI:</b></label>
+                </td>
+                <td><b>H</b>ue:</td>
+                <td><input type='number' class='nb_5 colVal' value='0.583' min='0' max='1' step='0.001'
+                    onchange='number_change()'></td>
+                <td><b>S</b>aturate:</td>
+                <td><input type='number' class='nb_5 colVal' value='1' min='0' max='1' step='0.001'
+                    onchange='number_change()'></td>
+                <td><b>I</b>ntensity:</td>
+                <td><input type='number' class='nb_5 colVal' value='0.5' min='0' max='1' step='0.001'
+                    onchange='number_change()'></td>
+            </tr>
+            <tr>
+                <td><input type='radio' name='rd_space' class='rd_space' value='cmyk' onchange='radio_change()'>
+                    <label class='lb_space' onclick='lb_space_click(6)'><b>CMYK:</b></label>
+                </td>
+                <td><b>C</b>yan:</td>
+                <td><input type='number' class='nb_6 colVal' value='1' min='0' max='1' step='0.001'
+                    onchange='number_change()'></td>
+                <td><b>M</b>agenta:</td>
+                <td><input type='number' class='nb_6 colVal' value='0.5' min='0' max='1' step='0.001'
+                    onchange='number_change()'></td>
+                <td><b>Y</b>ellow:</td>
+                <td><input type='number' class='nb_6 colVal' value='0' min='0' max='1' step='0.001'
+                    onchange='number_change()'></td>
+                <td>Blac<b>K</b>:</td>
+                <td><input type='number' class='nb_6 colVal' value='0' min='0' max='1' step='0.001'
+                    onchange='number_change()'></td>
+            </tr>
+        </table>
+        <div id='get-info'></div>
+    </body>
+</html>
